@@ -1,3 +1,20 @@
+/* declaration police custom*/
+@font-face {
+    font-family: 'compass';
+    src: url(../ressources/fonts/Compass\ Book.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* application de la police sur tous les tittres */
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'compass';
+}
+
 * {
     box-sizing: border-box;
     font-family: Arial, sans-serif;
