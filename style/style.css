@@ -185,3 +185,77 @@ footer ul li a {
 footer ul li a:hover {
     text-decoration: underline;
 }
+
+
+/* Pour les tablettes (largeur max de 768px) */
+@media (max-width: 768px) {
+
+    /* En-tête */
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Section Héro */
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    /* Produits */
+    .product-item {
+        width: 45%;
+        /* Deux produits côte à côte */
+    }
+}
+
+/* Pour les mobiles (largeur max de 480px) */
+@media (max-width: 480px) {
+
+    /* En-tête */
+    header .container {
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    /* Section Héro */
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .cta-button {
+        width: 100%;
+        display: block;
+        margin-top: 20px;
+    }
+
+    /* Produits */
+    .product-item {
+        width: 90%;
+        /* Un produit par ligne */
+        margin: 0 auto;
+    }
+
+    /* Pied de page */
+    footer ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
