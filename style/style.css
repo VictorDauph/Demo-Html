@@ -28,6 +28,7 @@ header {
 }
 
 header .container {
+    /* classe flexbox, qui contient des blocks et gère leur disposition. Elle contient un titre et un nav */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -106,6 +107,7 @@ nav ul li a:hover {
 .product-list {
     display: flex;
     justify-content: space-around;
+    /* flex wrap permet le retour à la ligne */
     flex-wrap: wrap;
     gap: 20px;
 }
